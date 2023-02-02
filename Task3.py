@@ -24,3 +24,4 @@ while True:
     elif len(nameUser) > 1 and len(nameUser) <= 20 :
         if checkName(nameUser) == True and checkNum(nameUser) == True :
             print("Username meets requirements, congratulations!")
+            
