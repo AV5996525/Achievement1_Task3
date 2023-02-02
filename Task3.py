@@ -12,11 +12,15 @@ while True:
             if i.isdigit() :
                 fN = True
         return fN                    
-    nameUSER = input("Please enter your username: ").strip()
-    if len(nameUSER) <= 1 :
-        print("not big enough")
-    elif len(nameUSER) > 20 :
-        print("too big ")
-    elif len(nameUSER) > 1 and len(nameUSER) <= 20 :
-        if checkName(nameUSER) and checkNum(nameUSER) :
-            print("valid input")
+    nameUser = input("Please enter your username: ").strip()
+    if len(nameUser) <= 1 :
+        print("Username requires more than one character.")
+    elif len(nameUser) > 20 :
+        print("Username exceeds 20 characters.")
+    elif nameUser.isdigit() :
+        print("Username requires atleast one uppercase letter.")
+    elif nameUser.isalpha() :
+        print("Username requires atleast one number.")        
+    elif len(nameUser) > 1 and len(nameUser) <= 20 :
+        if checkName(nameUser) == True and checkNum(nameUser) == True :
+            print("Username meets requirements, congratulations!")
