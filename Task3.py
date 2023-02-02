@@ -33,6 +33,8 @@ while True:                             #intializing loop.
         print("Username requires more than one character.")
     elif len(nameUser) > 20 :                                    #Condition for input with more than 20 characters.
         print("Username exceeds 20 characters.")    
+    elif nameUser.islower() :                                    #Condition for input with only lowercase characters.
+        print("Username requires uppercase characters and one digit.")
     elif nameUser.isdigit() :                                    #Condition for input with only numbers.
         print("Username requires atleast one uppercase letter.")
     elif nameUser.isalpha() :                                    #Condition for input with only letters.
