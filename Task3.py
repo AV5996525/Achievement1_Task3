@@ -20,5 +20,3 @@ while True:
     elif len(nameUSER) > 1 and len(nameUSER) <= 20 :
         if checkName(nameUSER) and checkNum(nameUSER) :
             print("valid input")
-    
-
